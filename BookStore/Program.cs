@@ -12,6 +12,7 @@ options.UseSqlServer(builder.Configuration.GetConnectionString("localConnection"
 builder.Services.AddScoped<IGenreService, GenreService>();
 builder.Services.AddScoped<IAuthorService, AuthorService>();
 builder.Services.AddScoped<IPublisherService, PublisherService>();
+builder.Services.AddScoped<IBookService, BookService>();
 
 var app = builder.Build();
 
